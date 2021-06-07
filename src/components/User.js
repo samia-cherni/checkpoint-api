@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, ListGroup, ListGroupItem} from "react-bootstrap";
+import { Card, ListGroup, ListGroupItem,Button} from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 
 const User = ({ el }) => {
@@ -25,6 +26,7 @@ const User = ({ el }) => {
           </ListGroupItem>
         </ListGroup>
         <Card.Body>
+          <Button variant="info"><Link style={{color:"white",textDecoration:"none"}}to={`/user/${el.id}`}>See Posts</Link></Button>
         </Card.Body>
       </Card>
     </div>
